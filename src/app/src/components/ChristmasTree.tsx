@@ -28,6 +28,7 @@ export function ChristmasTree(
     >
       {tree.flatMap((line) => Array.from(line)).map((item, i) => (
         <div
+          key={`star-${i}`}
           className={item === "*"
             ? i < height * 2 - 1
               ? `yellow-255-text`

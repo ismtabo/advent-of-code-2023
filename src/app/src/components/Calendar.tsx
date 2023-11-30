@@ -1,4 +1,4 @@
-import solutions from "../../../solutions/mod.ts";
+import * as solutions from "../../../solutions/mod.ts";
 import React from "react";
 import { isToday } from "../utils/date.ts";
 
@@ -39,11 +39,12 @@ export function Calendar({ day, onDaySelected, style }: CalendarProps) {
         <div style={{ fontSize: ".75em", textAlign: "center" }}>Fri</div>
         <div style={{ fontSize: ".75em", textAlign: "center" }}>Sat</div>
         <div style={{ fontSize: ".75em", textAlign: "center" }}>Sun</div>
-        {new Array(7 - dowEndOfMonth).fill(null).map((_, i) => <div></div>)}
+        {new Array(7 - dowEndOfMonth).fill(null).map((_, i) => <div key={`sep-${i}`}></div>)}
         {new Array(31).fill(null).map((_, i) => (
           `day${i + 1}` in solutions
             ? (
               <div
+                key={`day${i + 1}`}
                 className={`cursor-pointer ${
                   day === i
                     ? "green-255 blue-168-text disable"
@@ -61,6 +62,7 @@ export function Calendar({ day, onDaySelected, style }: CalendarProps) {
             )
             : (
               <div
+                key={`day${i + 1}`}
                 className={`white-168-text${
                   i === 24 ? " red-168 black-255-text" : ""
                 }`}

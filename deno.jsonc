@@ -5,6 +5,8 @@
       "deno.unstable",
       "dom"
     ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "https://dev.jspm.io/react@17.0.2",
     "noImplicitAny": true
   },
   "lint": {

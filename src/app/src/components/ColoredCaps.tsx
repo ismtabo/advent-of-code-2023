@@ -10,7 +10,7 @@ export function ColoredCaps(
         typeof element === "string"
           ? Array.from(element).map((char, i) => {
             if (/[A-Z]/.test(char)) {
-              return <span className="red-255-text">{char}</span>;
+              return <span key={`${char}-${i}`} className="red-255-text">{char}</span>;
             }
             return <>{char}</>;
           })
