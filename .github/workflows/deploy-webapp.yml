@@ -24,14 +24,11 @@ jobs:
       - name: Build
         working-directory: src/app
         run: make build
-      - name: Tar build
-        working-directory: src/app/build
-        run: tar -cvf artifact.tar *
       - name: Upload Github Pages artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
           name: github-pages
-          path: src/app/build/artifact.tar
+          path: src/app/build
   deploy:
     runs-on: ubuntu-latest
     needs: build

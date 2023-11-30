@@ -46,6 +46,7 @@ clean:
 assets: clean
 	mkdir -p $(OUT_DIR)
 	cp $(PUBLIC_DIR)/styles.css $(OUT_DIR)
+	cp -r $(PUBLIC_DIR)/static $(OUT_DIR)
 
 bundle-dev: assets
 	cp $(PUBLIC_DIR)/dev.html $(OUT_DIR)/index.html
