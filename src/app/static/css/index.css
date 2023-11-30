@@ -1,0 +1,21 @@
+/* @import url(./reset.css); */
+*:not(dialog) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  line-height: 1.2em;
+}
+
+html {
+  font-family: "DOS" !important;
+}
+
+#root {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000084;
+  overflow: hidden;
+}
