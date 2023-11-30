@@ -199,3 +199,6 @@ poetry.toml
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/deno,python,dotenv,visualstudiocode
+
+### act ###
+.actrc

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "deno.window",
+      "deno.unstable",
+      "dom"
+    ],
+    "noImplicitAny": true
+  },
+  "lint": {
+    "rules": {
+      "exclude": [
+        "import-prefix-missing",
+        "no-unused-vars"
+      ]
+    }
+  }
+}

@@ -1,1 +1,5 @@
-/dist
+!build/
+build/index.html
+build/bundle*.js
+
+public/*.js

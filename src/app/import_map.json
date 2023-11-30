@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "react": "https://dev.jspm.io/react@17.0.2",
+    "react/": "https://dev.jspm.io/react@17.0.2/",
+    "react-dom": "https://dev.jspm.io/react-dom@17.0.2",
+    "react-dom/": "https://dev.jspm.io/react-dom@17.0.2/",
+    "types/react": "https://esm.sh/v128/@types/react@17.0.71",
+    "types/react/": "https://esm.sh/v128/@types/react@17.0.71/"
+  }
+}
