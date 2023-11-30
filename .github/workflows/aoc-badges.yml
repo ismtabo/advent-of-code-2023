@@ -8,13 +8,13 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: joblo2213/aoc-badges-action@v3
         with:
           userid: 387671
           session: ${{ secrets.AOC_SESSION }}
           year: 2023
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "doc: update badges"
           commit_user_name: Ismael Taboada
