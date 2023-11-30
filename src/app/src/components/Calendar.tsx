@@ -39,7 +39,9 @@ export function Calendar({ day, onDaySelected, style }: CalendarProps) {
         <div style={{ fontSize: ".75em", textAlign: "center" }}>Fri</div>
         <div style={{ fontSize: ".75em", textAlign: "center" }}>Sat</div>
         <div style={{ fontSize: ".75em", textAlign: "center" }}>Sun</div>
-        {new Array(7 - dowEndOfMonth).fill(null).map((_, i) => <div key={`sep-${i}`}></div>)}
+        {new Array(7 - dowEndOfMonth).fill(null).map((_, i) => (
+          <div key={`sep-${i}`}></div>
+        ))}
         {new Array(31).fill(null).map((_, i) => (
           `day${i + 1}` in solutions
             ? (

@@ -38,7 +38,7 @@ export function DaySelector({ selectedDay, onDayChange }: DaySelectorProps) {
 
 function DaysList({ selectedDay, onDayChange }: DaySelectorProps) {
   const daysKeys = useRef<string[]>(Object.keys(solutions));
-  console.log(daysKeys.current)
+  console.log(daysKeys.current);
   return (
     <ul>
       {daysKeys.current.map((day: string) => {
