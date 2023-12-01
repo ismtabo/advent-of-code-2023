@@ -1,17 +1,24 @@
 {
   "compilerOptions": {
-    "lib": ["deno.window", "deno.unstable", "dom"],
+    "lib": [
+      "deno.window",
+      "deno.unstable",
+      "dom"
+    ],
     "jsx": "react-jsx",
-    "jsxImportSource": "https://dev.jspm.io/react@17.0.2",
+    "jsxImportSource": "react",
     "noImplicitAny": true
   },
   "importMap": "./import_map.json",
   "lint": {
     "rules": {
+      "tags": [
+        "recommended"
+      ],
       "exclude": [
-        "import-prefix-missing",
-        "no-unused-vars"
+        "import-prefix-missing"
       ]
     }
-  }
+  },
+  "fmt": {}
 }

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { useWidth } from "../hooks/use-width.ts";
 import * as solutions from "../../../solutions/mod.ts";
 import { ColoredCaps } from "./ColoredCaps.tsx";
@@ -38,7 +38,6 @@ export function DaySelector({ selectedDay, onDayChange }: DaySelectorProps) {
 
 function DaysList({ selectedDay, onDayChange }: DaySelectorProps) {
   const daysKeys = useRef<string[]>(Object.keys(solutions));
-  console.log(daysKeys.current);
   return (
     <ul>
       {daysKeys.current.map((day: string) => {

@@ -4,7 +4,7 @@
  * Start a static server in the build output directory. Useful for testing a production build
  * locally before a deploy.
  */
-import { Application } from "./dev_deps.ts";
+import { Application } from "abc";
 
 const APP_PORT = 8000;
 

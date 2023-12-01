@@ -1,5 +1,5 @@
 import * as solutions from "../../../solutions/mod.ts";
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 
 interface DaySolution<Input = unknown, Output = number> {
   partTwoAvailable: boolean;

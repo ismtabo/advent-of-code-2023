@@ -1,7 +1,7 @@
 /**
  * Index module.
  */
-import React, { StrictMode } from "react";
+import { StrictMode } from "react";
 import { render } from "react-dom";
 import { App } from "./App.tsx";
 

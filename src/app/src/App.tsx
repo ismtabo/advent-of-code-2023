@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Welcome } from "./components/Welcome.tsx";
 import { Day } from "./components/Day.tsx";
 import { DaySelector } from "./components/DaySelector.tsx";

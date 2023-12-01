@@ -1,16 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChangeEvent } from "types/react";
 import { useDay } from "../hooks/use-day.ts";
 import { Calendar } from "./Calendar.tsx";
 import { ColoredCaps } from "./ColoredCaps.tsx";
 
 declare const config: { log: boolean; result: number | string | bigint };
-
-const performance = {
-  now() {
-    return NaN;
-  },
-};
 
 interface DayProps {
   day: number;
@@ -91,7 +85,6 @@ export function Day({ day: dayKey, onDaySelected }: DayProps) {
     setRuntime(runtime);
     setLoading(false);
     if (config.log === true) {
-      console.log(output);
       config.result = output;
     }
   }

@@ -1,19 +1,21 @@
 {
+  "tasks": {
+    "new": "deno run --allow-read --allow-write --allow-run --unstable src/cli/mod.ts new",
+    "download": "deno run --allow-read --allow-write --allow-net --allow-env --unstable src/cli/mod.ts download",
+    "run": "deno run --allow-read --allow-write --unstable src/cli/mod.ts run",
+    "run-all": "deno run --allow-read --allow-write --unstable src/cli/mod.ts run"
+  },
   "compilerOptions": {
     "lib": [
       "deno.window",
-      "deno.unstable",
-      "dom"
+      "deno.unstable"
     ],
-    "jsx": "react-jsx",
-    "jsxImportSource": "https://dev.jspm.io/react@17.0.2",
     "noImplicitAny": true
   },
   "lint": {
     "rules": {
-      "exclude": [
-        "import-prefix-missing",
-        "no-unused-vars"
+      "tags": [
+        "recommended"
       ]
     }
   }

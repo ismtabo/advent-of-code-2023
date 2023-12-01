@@ -22,11 +22,9 @@ hooks:
 	cd .git/hooks && ln -s -f ../../hooks/pre-push pre-push
 
 install:
-	deno cache deps.ts
 	deno cache dev_deps.ts
 
 upgrade:
-	deno cache --reload deps.ts
 	deno cache --reload dev_deps.ts
 
 

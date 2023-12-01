@@ -2,11 +2,12 @@ import { partOne } from "./partOne/mod.ts";
 import { partTwo } from "./partTwo/mod.ts";
 
 export function validate(text: string): boolean {
-  return false;
+  return text.trim().split("\n").length > 0 &&
+    text.trim().split("\n").every((line) => /[0-9a-z]/.test(line));
 }
 
 export function preprocess(text: string) {
-  return text.split("\\n");
+  return text.trim().split("\n");
 }
 
 export function main(text: string, isPart2: boolean) {
@@ -17,7 +18,6 @@ export function main(text: string, isPart2: boolean) {
   return partOne(input);
 }
 
-// TODO: Change to true once both parts are solved
-const partTwoAvailable = false;
+const partTwoAvailable = true
 
 export { partOne, partTwo, partTwoAvailable };
