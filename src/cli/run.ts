@@ -5,7 +5,7 @@ import {
   readDaySampleInput,
 } from "./load.ts";
 import { log } from "./log.ts";
-import { Result, ResultDay, RunOptions, Solution } from "./types.d.ts";
+import { Result, ResultDay, RunOptions, Solution } from "./types.ts";
 import { dayKey, extractDayNumber } from "./utils.ts";
 
 function runWithTime<T>(fn: () => Result<T>): Result<T> {

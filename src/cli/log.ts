@@ -5,7 +5,7 @@ import {
   ResultDay,
   ResultsDays,
   RunOptions,
-} from "./types.d.ts";
+} from "./types.ts";
 import { extractDayNumber, isResult, isResultDay } from "./utils.ts";
 
 function logResult(result: Result, prefix = "") {

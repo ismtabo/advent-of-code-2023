@@ -1,5 +1,5 @@
 import { dirname, join } from "https://deno.land/std@0.166.0/path/mod.ts";
-import { Solution, Solutions } from "./types.d.ts";
+import { Solution, Solutions } from "./types.ts";
 import { dayKey, extractDayNumber } from "./utils.ts";
 
 const __dirname = dirname(new URL(import.meta.url).pathname);

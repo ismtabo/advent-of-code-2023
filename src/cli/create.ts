@@ -51,5 +51,5 @@ export async function createDay(day: number | undefined) {
     `export * as day${day} from "./day${day}/mod.ts";`,
   );
   Deno.writeTextFileSync(SOLUTIONS_MODULE, solutionsModuleLines.join("\n"));
-  Deno.run({ cmd: ["deno", "fmt", SOLUTIONS_MODULE] });
+  new Deno.Command("deno", { args: ["fmt", SOLUTIONS_MODULE] }).spawn();
 }

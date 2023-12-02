@@ -1,4 +1,4 @@
-import { Format, Result, ResultDay, ResultsDays } from "./types.d.ts";
+import { Format, Result, ResultDay, ResultsDays } from "./types.ts";
 
 export function isResult(obj: Result | ResultDay | ResultsDays): obj is Result {
   return typeof obj === "object" && "result" in obj;

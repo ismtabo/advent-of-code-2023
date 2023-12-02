@@ -1,4 +1,4 @@
-declare enum Format {
+export declare enum Format {
   CSV = "csv",
   JSON = "json",
   PLAIN = "plain",
@@ -18,6 +18,7 @@ export type SolutionPart<Input = unknown, Output = number> = (
 ) => Output;
 
 export interface Solution<Input = unknown, Output = number> {
+  validate: (_: string) => boolean;
   preprocess: (_: string) => Input;
   main: (_: string, __: boolean, ___?: unknown) => Output;
   partOne: SolutionPart<Input, Output>;

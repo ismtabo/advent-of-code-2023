@@ -3,8 +3,9 @@ import { config } from "https://deno.land/x/dotenv@v3.2.0/mod.ts";
 import { createDay } from "./create.ts";
 import { download } from "./download.ts";
 import { runAllDays, runDay } from "./run.ts";
-import { Format } from "./types.d.ts";
+import { Format } from "./types.ts";
 import { isFormat } from "./utils.ts";
+import { validateDay } from "./validate.ts";
 
 config({ export: true, allowEmptyValues: true });
 
@@ -128,6 +129,22 @@ try {
         .action(({ day, aocSession, force = false }) =>
           download(aocSession, day, { force })
         ),
+    )
+    .command(
+      "validate",
+      new Command()
+        .description("Validate input text file for given day")
+        .option(
+          "-d, --day <day:number>",
+          "Day of the solution.",
+          { required: true },
+        )
+        .option(
+          "-f, --file <file:string>",
+          "Input file.",
+          { required: true },
+        )
+        .action(({ day, file }) => validateDay(day, file)),
     )
     .parse(Deno.args);
 } catch (error) {
