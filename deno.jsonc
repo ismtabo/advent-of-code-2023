@@ -3,7 +3,7 @@
     "new": "deno run --allow-read --allow-write --allow-run --unstable src/cli/mod.ts new",
     "download": "deno run --allow-read --allow-write --allow-net --allow-env --unstable src/cli/mod.ts download",
     "run": "deno run --allow-read --allow-write --unstable src/cli/mod.ts run",
-    "run-all": "deno run --allow-read --allow-write --unstable src/cli/mod.ts run",
+    "run-all": "deno run --allow-read --allow-write --unstable src/cli/mod.ts run-all",
     "validate-input": "deno run --allow-read --allow-write --unstable src/cli/mod.ts validate"
   },
   "compilerOptions": {
