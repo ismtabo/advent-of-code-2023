@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "new": "deno run --allow-read --allow-write --allow-run --unstable src/cli/mod.ts new",
+    "new": "deno run --allow-read --allow-write --allow-run --allow-net --unstable src/cli/mod.ts new",
     "download": "deno run --allow-read --allow-write --allow-net --allow-env --unstable src/cli/mod.ts download",
     "run": "deno run --allow-read --allow-write --allow-net --unstable src/cli/mod.ts run",
     "run-all": "deno run --allow-read --allow-write --allow-net --unstable src/cli/mod.ts run-all",
