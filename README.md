@@ -1,7 +1,7 @@
 # Advent of code Deno Template
 
-![](https://img.shields.io/badge/day%20📅-7-blue)
-![](https://img.shields.io/badge/stars%20⭐-11-yellow)
+![](https://img.shields.io/badge/day%20📅-8-blue)
+![](https://img.shields.io/badge/stars%20⭐-12-yellow)
 ![](https://img.shields.io/badge/days%20completed-5-red)
 
 Template repository of solutions for the [Advent of Code][4] done by [ismtabo][1].
